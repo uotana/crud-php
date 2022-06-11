@@ -1,0 +1,38 @@
+footer{
+    color: #1f1f1f;
+    font-size: clamp(10px, 2vw + 0.6rem, 0.8rem);
+    background-color: white;
+}
+
+footer div a{
+    text-decoration: none;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-media{
+    display: flex;
+    flex-direction:row;
+}
+
+.social-media a{
+    margin: 1.5rem 1rem 0.5rem 1rem;
+}
+
+footer div:last-child{
+    text-align: center;
+}
+
+footer hr{
+    margin: 0rem 1rem;  
+}
+
+@media screen and (min-width: 600px) {
+  footer hr{
+    margin: 0rem 2rem;  
+  }
+}

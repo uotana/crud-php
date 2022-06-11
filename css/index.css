@@ -1,0 +1,147 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(12px, 1.2vw + 0.4rem, 0.8rem);
+    background-size: 12px 12px;
+    background-image:
+    linear-gradient(to right, #f1f1f1 1px, transparent 1px),
+    linear-gradient(to bottom, #f1f1f1 1px, transparent 1px);
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    padding: 1rem;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #14274E;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    margin:0;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:white;
+}
+
+#index{
+    margin: auto;
+}
+
+#login, #signup, #atualizar, #home, #deletar{
+    width:100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.usuario{
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.usuario div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.usuario hr{
+    margin-top:0.5rem;
+}
+
+.usuario:hover{
+    border-radius: 5px;
+    background-color: #E8F9FD;
+    /*background-color: #889EAF;*/
+}
+
+.mensagem{
+    color: red;
+}
+
+#msg-logout{
+    text-align: right;
+}
+
+.bemvindo{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+.bemvindo form {
+    margin:0;
+}
+
+.big-form{
+    padding: 0.5rem 0rem 2rem 0rem;
+}
+
+.big-form div{
+    margin: 1rem 0;
+}
+
+.big-form input{
+    margin-top: 0.5rem;
+    line-height: 30px;
+    width: min(98%, 600px);
+}
+
+.big-form label, .usuario{
+    font-size: clamp(14px, 1.2vw + 0.5rem, 1rem);
+}
+
+.footer-form{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 450px) {
+    .buttons{
+        display: flex;
+        display:flex;
+        justify-content:space-between;
+    }
+    .buttons div{
+        width:48%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #index{
+        padding: 2rem 2rem 0 2rem;
+    }
+    #msg-logout{
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        margin: 0 auto;
+        width: 800px;
+    }
+    #index{
+        padding: 2.5rem 3.5rem;
+    }
+    #msg-logout{
+        padding: 0 3.5rem;
+    }
+    
+    #index .bemvindo{
+        padding-right: 0 3rem;
+    }
+}
